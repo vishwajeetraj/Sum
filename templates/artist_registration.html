@@ -1,0 +1,114 @@
+{% load static %}
+
+{% include 'header.html' %}
+<header class="innerPages header">
+        <div class="perspective artist_bg">
+            <div class="opacity-medium bg-extra-dark-gray bg-opacity-color"></div>
+            <div class="container">
+                <h1>Artist <br>
+              <span>Registration</span></h1>
+            </div>
+    </header>
+    <section class="intro catDetails wow fadeIn no-padding-bottom">
+        <div class="container">
+            <div class="row fadeInRight">
+                <p>Would you like to showcase and promote your artworks? Then, register your art at Fundore as it has many places where all kinds of art forms like dance, acting, stand up comedy, music, singing can be played. So all the artist can register at this page if they want to showcase their art.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hello artistReg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <h2 data-text="Book">Book now</h2>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6 col-xs-12 wow fadeIn ml-auto mr-auto" data-wow-delay="0.05s" style="visibility: visible; animation-delay: 0.05s; animation-name: fadeIn;">
+                    <form action="javascript:void(0);" class="row inner contBox" id="form" method="post" novalidate="novalidate">
+                        <input type="hidden" name="type" value="artist">
+                       <div class="form-group col-sm-12 col-12">
+                          <label><span>Name</span></label>
+                          <input type="text" name="contact_name" id="contact_name" class="form-check" required>
+                       </div>
+                       <div class="form-group col-sm-12 col-12">
+                          <label><span>Mobile</span></label>
+                          <input type="text" name="contact_mobile" id="contact_mobile" class="form-check" required>
+                       </div>
+                       <div class="form-group col-sm-12 col-12">
+                          <label><span>Email</span></label>
+                          <input type="text" name="contact_email" id="contact_email" class="form-check" required>
+                       </div>
+                       <div class="form-group col-12">
+                          <label><span>Message</span></label>
+                        <textarea name="contact_message" id="contact_message" class="form-check" required></textarea>
+                       </div>
+                        <div id="ajaxResponseDiv" style="position: relative;color: #ff3a3a;display: block;width: 100%;left: 15px"></div>
+                        <div>
+                            <div class="custom-link"style="position:relative;">
+                              <a href="#">
+                                <div class="lines"> <span></span> <span></span> </div>
+                                 <button class="btn" id="submit-btn" onclick="contactForm();">Submit</button></a>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="success" class="alert alert-success" role="alert"> Your message was sent successfully! We will be in touch as soon as we can. </div>
+                    <div id="error" class="alert alert-danger" role="alert"> Something went wrong, try refreshing and submitting the form again. </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="intro catDetails wow fadeInLeft">
+        <div class="container">
+            <div class="row">
+                <h2>Latest Activity</h2>
+                <div class="row">
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/8g9synccwn00geyqkh4t.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/8g9synccwn00geyqkh4t.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/two.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/two.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/three.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/three.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/four.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/four.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/five.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/five.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/six.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/six.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/eight.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/seven.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                    <div class="col-lg-3 col-md-4 col-xs-6 thumb gall_Design">
+                      <a href="{% static 'uploads/activity/eight.jpg' %}" data-fancybox="" class="fancybox" rel="ligthbox">
+                          <img src="{% static 'uploads/activity/eight.jpg' %}" alt="">
+                      </a>
+                  </div>
+                                  </div>
+
+            </div>
+        </div>
+    </section>
+
+<div class="clearfix"></div>
+{% include 'footer.html' %}
