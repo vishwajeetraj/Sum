@@ -1054,7 +1054,8 @@ header .sound .equalizer .holder {
 /* NAVBAR */
 .navbar {
   width: 100%;
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   left: 0;
   top: 0;
   padding: 20px 40px;
@@ -2016,7 +2017,7 @@ s .process span:before {
 }
 
 /* CLIENTS */
-.clients {
+/* .clients {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -2101,6 +2102,29 @@ s .process span:before {
 .clients ul li:hover img {
   opacity: 0.05;
   transform: scale(1.2);
+} */
+.clients .owl-item img:hover {
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.clients .owl-nav, .clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.clients .owl-dot.active {
+  background-color: #57cbcc !important;
 }
 
 /* NEWS */
@@ -2978,7 +3002,7 @@ figure.effect-zoe p.description {
   .works-single h4 {
     margin-bottom: 20px;
   }
-  
+
 .intro {
     padding: 30px 0;
 }
@@ -3167,8 +3191,8 @@ figure.effect-zoe p.description {
   .footer {
     padding: 30px 0;
   }
-  
- 
+
+
   .footer .footer-quote img {
     margin-bottom: 15px;
   }
@@ -3197,7 +3221,7 @@ figure.effect-zoe p.description {
 /*# sourceMappingURL=style.css.map */
 
 
-.btn {
+/* .btn {
     color: #fff;
     background-color: #e9128b;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
@@ -3209,8 +3233,23 @@ figure.effect-zoe p.description {
 
 .btn:hover {
   color: #fff;
-} 
+} */
+.btn {
+  color: #fff;
+  background-color: #353b43;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  border: 2px solid #57cbcc;
+}
 
+.btn:hover {
+  background: #57cbcc;
+  color: #343a40;
+}
 .eventDetails {
   padding: 20px;
   border: 1px solid #01f7b6;
@@ -3236,7 +3275,7 @@ figure.effect-zoe p.description {
   height: 54vh;
   min-height: 450px;
   min-height: auto;
-} 
+}
 
 .activityName {
     border: 1px solid #eee;
@@ -3279,7 +3318,7 @@ figure.effect-zoe p.description {
 .nop.form-control {
   width: 30%;
   text-align: center;
-} 
+}
 
 .date.form-control {
   width: 80%;
@@ -3374,13 +3413,13 @@ figure.effect-zoe p.description {
 }
 .margin-half-bottom {
   margin-bottom:.5rem;
-} 
+}
 .margin-one-bottom {
   margin-bottom:1rem;
-} 
+}
 .margin-two-bottom {
   margin-bottom:2rem;
-} 
+}
 
 .margin-three-bottom {
   margin-bottom:3rem;
@@ -3389,7 +3428,7 @@ figure.effect-zoe p.description {
   margin-bottom:4rem;
 }
 .foodCard {
-  
+
   border-radius: 4px;
 }
 
@@ -3428,7 +3467,7 @@ figure.effect-zoe p.description {
 .foodImg-pad {
   padding-right: 0;
 
-} 
+}
 
 .foodDetl-pad {
   padding-left: 0;
@@ -3446,7 +3485,7 @@ figure.effect-zoe p.description {
   padding-bottom: 0px;
 }*/
 .pd-bottom {
-  padding-bottom: 0px; 
+  padding-bottom: 0px;
 }
 
 .catDetails h2 {
@@ -3686,7 +3725,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .gall_Design:hover img {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .bgIcon_Img {
@@ -3858,21 +3897,21 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .archery {
     background-image: url(../images/archery_cover.html);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .ropecourse {
     background-image: url(../images/ropecourse_cover.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 
 .rappelling{
@@ -3880,21 +3919,21 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .pendulum_swing{
     background-image: url(../images/pendulum_cover.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .skyzilla{
     background-image: url(../images/skyzilla_cover.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
  .figure.effect-zoe  p{
     position: absolute;
@@ -3914,14 +3953,14 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .virtual
 {    background-image: url(../images/virtual_cover.html);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 
 .target-shooting{
@@ -3929,21 +3968,21 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .soft_play{
     background-image: url(../images/softplay_cover.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .rocket-ejector{
     background-image: url(../images/rocket-ejector_cover.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 
 .hunting{
@@ -3951,21 +3990,21 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .carrom{
     background-image: url(../images/carrom_cover.html);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .air_hockey{
     background-image: url(../images/air_hockey_cover.html);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 
 .board-game{
@@ -3973,7 +4012,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 
 .dart{
@@ -3981,7 +4020,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 
 .fooseball{
@@ -3989,31 +4028,31 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .chess{
     background-image: url(../images/chess_cover.html);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .billiard{
     background-image: url(../images/billiards_cover.html);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .trampoline{
     background-image: url(../images/trampoline-cover.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
-    
+
 }
 .about_bg {
-     background-image: url(../images/about_bg.jpg);
+     background-image: url(../images/sumabout.jpg);
     background-repeat: no-repeat;
     visibility: visible;
     animation-name: fadeIn;
@@ -4082,7 +4121,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 .foodMenu .opening-hours-container .opening-hours-holder-inner .opening-hours-line { border-bottom:1px dotted #fff;
 
 }
-@media screen and (max-width: 800px) and (min-width: 267px) { 
+@media screen and (max-width: 800px) and (min-width: 267px) {
  .xs-mt{
    margin-top:40px;
 }
@@ -4228,7 +4267,7 @@ figure.effect-zoe h2, figure.effect-zoe p.icon-links a {
     text-align: center;
     font-size: 18px;
     font-weight: 800;
- 
+
 }
 
 .margin-80px-top {
@@ -4279,20 +4318,20 @@ border-top: 1px solid #f5842f !important;
     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
         display: block;
     }
-    
+
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
         transition: none;
     }
-    
+
     .carousel-inner .carousel-item-next,
     .carousel-inner .carousel-item-prev {
       position: relative;
       transform: translate3d(0, 0, 0);
     }
-    
+
     .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: absolute;
         top: 0;
@@ -4301,7 +4340,7 @@ border-top: 1px solid #f5842f !important;
         display: block;
         visibility: visible;
     }
-    
+
     /* left or forward direction */
     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carousel-item-next.carousel-item-left + .carousel-item,
@@ -4312,7 +4351,7 @@ border-top: 1px solid #f5842f !important;
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
-    
+
     /* farthest right hidden item must be abso position for animations */
     .carousel-inner .carousel-item-prev.carousel-item-right {
         position: absolute;
@@ -4322,7 +4361,7 @@ border-top: 1px solid #f5842f !important;
         display: block;
         visibility: visible;
     }
-    
+
     /* right or prev direction */
     .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .carousel-item-prev.carousel-item-right + .carousel-item,
@@ -4341,7 +4380,7 @@ border-top: 1px solid #f5842f !important;
 
  /* Bootstrap Lightbox using Modal */
 
-#profile-grid { overflow: auto; white-space: normal; } 
+#profile-grid { overflow: auto; white-space: normal; }
 #profile-grid .profile { padding-bottom: 40px; }
 #profile-grid .panel { padding: 0 }
 #profile-grid .panel-body { padding: 15px }
@@ -4403,13 +4442,13 @@ height: 400px;
 .bg-card-one h6{
     color: #fff;
     font-size:18px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .bg-card-one p{
     color: #fff;
     margin-top: 40px;
-  
+
 }
 .bg-card-one img{
     border-radius: 48%;
@@ -4430,13 +4469,13 @@ height: 400px;
     font-size:18px;
        margin-top: 40px;
     margin-bottom: 30px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .bg-card-two p{
     color: #fff;
     margin-top: 40px;
-  
+
 }
 .bg-card-two img{
     border-radius: 48%;
@@ -4456,13 +4495,13 @@ height: 400px;
     font-size:18px;
        margin-top: 40px;
     margin-bottom: 30px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .bg-card-three p{
     color: #fff;
     margin-top: 40px;
-  
+
 }
 .bg-card-three img{
     border-radius: 48%;
@@ -4487,7 +4526,7 @@ height: 400px;
     font-size: 60px;
     line-height: 1.2;
     padding-right: 35%;
-  }  
+  }
 
 .blog h2:before {
   content: attr(data-text);
